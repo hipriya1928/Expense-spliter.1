@@ -34,7 +34,7 @@ def create_expense():
         # Validate input data
         is_valid, error_message = validate_expense_data(data)
         if not is_valid:
-            return jsonify({'error': error_message}), 400
+            return jsonify({'errorr': error_message}), 400
         
         total_amount = float(data['total_amount'])
         num_people = int(data['num_people'])
